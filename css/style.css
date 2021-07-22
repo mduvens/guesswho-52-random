@@ -690,17 +690,7 @@ button {
         font-size: 6vh
     }
 
-    .card-4:after {
-        background-position: calc(var(--card-width) * -4.15) calc(var(--card-height) * -0)
-    }
-
-    .card-9:after {
-        background-position: calc(var(--card-width) * -9.1) calc(var(--card-height) * -1)
-    }
-
-    .card-14:after {
-        background-position: calc(var(--card-width) * -14.1) calc(var(--card-height) * -2)
-    }
+ 
 
     .slots {
         height: 110%
@@ -719,3 +709,5 @@ button {
     }
     
 }
+
+  

@@ -870,7 +870,7 @@ let atributeImages = {
   total: {
     bald: 0,
     male: 0,
-    "normal glasses": 0,
+    "glasses": 0,
     "sunglasses": 0,
     hat: 0,
     beard: 0,

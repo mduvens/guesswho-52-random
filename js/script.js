@@ -103,6 +103,7 @@ let getAnswerValue = (value) => {
   answerValue = value
 }
 let gameCards;
+let spinner = document.getElementsByClassName('lds-ring')[0]
 let startGame = () => {
   victory = -1
   playerCardIndex = getRand(cardsNum)
