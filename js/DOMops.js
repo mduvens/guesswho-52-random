@@ -14,8 +14,6 @@ guessedPersonHTML.onkeyup = e => {
 
 answerYes.onclick = () => {
     playerAnswers[best["atribute"]] = true
-    console.log("** PLAYER ANSWERS **")
-    console.log(playerAnswers)
 
     Object.keys(activeCards).forEach(person => { // removing computer cards after asking questions
       if (!(activeCards[person][best["atribute"]]) && person != "total")
@@ -23,14 +21,12 @@ answerYes.onclick = () => {
     })
     setTotal(activeCards)
     logDictionary(activeCards,"ACTIVE CARDS")
-    // console.log(`positive atributes: ${Object.keys(activeCards["total"])}`)
   
   }
 
 answerNo.onclick = () => {
     playerAnswers[best["atribute"]] = false
-    console.log(playerAnswers)
-    
+   
     Object.keys(activeCards).forEach(person => { // removing computer cards after asking questions
         if (activeCards[person][best["atribute"]] && person != "total")
         delete activeCards[person]

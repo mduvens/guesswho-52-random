@@ -1,5 +1,12 @@
 const getRandomCard = (array) => {
-  return array[Math.floor(Math.random() * (array.length-1))]
+  let index = Math.floor(Math.random() * (array.length-1));
+
+  // Just try again if it's the same as player card 
+  while(index === playerCardIndex){
+    index = Math.floor(Math.random() * (array.length-1))
+  }
+  
+  return array[index];
 }
 
 const makePhrase = (atribute,lang) => {

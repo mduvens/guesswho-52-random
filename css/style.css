@@ -7,6 +7,39 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #345;
 }
+#computerCards{
+    font-size: 20px;
+}
+#timeleftDiv{
+    position: absolute;
+    right: 1%;
+    top: 30%;
+    z-index: 200;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+#timeoutDiv{
+    position: absolute;
+    right: 1%;
+    top: 30%;
+    z-index: 200;
+    font-size: 2.5em;
+    color: red;
+    display: none;
+}
+
+#blockDiv{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.082);
+    z-index: 190;
+    display: none;
+}
 
 #main {
     -webkit-perspective: 1600px;
